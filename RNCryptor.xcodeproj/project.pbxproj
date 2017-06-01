@@ -23,7 +23,7 @@
 		659135091B14271500B82A96 /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FB75651A1512D3E9007B806B /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6591350A1B14271500B82A96 /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807A /* RNDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6591350B1B14271500B82A96 /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B8076 /* RNEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6591350C1B14271500B82A96 /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807E /* RNCryptorEngine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6591350C1B14271500B82A96 /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807E /* RNCryptorEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6591350D1B14271500B82A96 /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B8084 /* RNCryptor+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AB13428615E0FC2300456914 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB13428415E0FC2300456914 /* InfoPlist.strings */; };
 		AB13429115E0FC4600456914 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807C /* RNCryptorEngine.m */; };
@@ -53,7 +53,7 @@
 		FB7565241512D9BE007B8079 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B8078 /* RNDecryptor.m */; };
 		FB7565241512D9BE007B807B /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807A /* RNDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB7565241512D9BE007B807D /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807C /* RNCryptorEngine.m */; };
-		FB7565241512D9BE007B807F /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807E /* RNCryptorEngine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FB7565241512D9BE007B807F /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807E /* RNCryptorEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB7565241512D9BE007B8085 /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B8084 /* RNCryptor+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FBE8BC9E1D9072970070C8D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE8BC9D1D9072970070C8D0 /* Security.framework */; };
 /* End PBXBuildFile section */
