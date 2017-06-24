@@ -27,7 +27,7 @@
 #import "RNDecryptor.h"
 #import "RNCryptor+Private.h"
 #import "RNCryptorEngine.h"
-
+#import <CommonCrypto/CommonCrypto.h>
 #import <CommonCrypto/CommonHMAC.h>
 
 static const NSUInteger kPreambleSize = 2;
@@ -280,7 +280,7 @@ static const NSUInteger kPreambleSize = 2;
 
   NSData *IV = [data _RNConsumeToIndex:self.settings.IVSize];
 
-  self.engine = [[RNCryptorEngine alloc] initWithOperation:kCCDecrypt settings:self.settings key:self.encryptionKey IV:IV error:&error];
+  self.engine = [[RNCryptorEngine alloc] initWithOperation:(uint32_t)kCCDecrypt settings:self.settings key:self.encryptionKey IV:IV error:&error];
   self.encryptionKey = nil; // Don't need this anymore
   if (!self.engine) {
     [self cleanupAndNotifyWithError:error];
