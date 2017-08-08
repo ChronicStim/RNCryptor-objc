@@ -31,6 +31,7 @@
 		1F37177F1DDB9DFD009E537B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37177E1DDB9DFD009E537B /* Security.framework */; };
 		1F3717811DDB9E07009E537B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3717801DDB9E07009E537B /* Foundation.framework */; };
 		1F3717831DDB9E0A009E537B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3717821DDB9E0A009E537B /* Security.framework */; };
+		3EFB44A01F3A336000E6DA74 /* RNCryptor iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 659134ED1B14262C00B82A96 /* RNCryptor iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ABDC61718615875000DE03F /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FB75651A1512D3E9007B806B /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ABDC61918615894000DE03F /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B8076 /* RNEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ABDC61C18615894000DE03F /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7565241512D9BE007B807E /* RNCryptorEngine.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -485,6 +486,7 @@
 				FB7565241512D9BE007B807B /* RNDecryptor.h in Headers */,
 				FB7565241512D9BE007B807F /* RNCryptorEngine.h in Headers */,
 				FB7565241512D9BE007B8085 /* RNCryptor+Private.h in Headers */,
+				3EFB44A01F3A336000E6DA74 /* RNCryptor iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
