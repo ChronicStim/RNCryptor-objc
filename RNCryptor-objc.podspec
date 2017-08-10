@@ -17,17 +17,27 @@ LIC
   }
   s.source = { :git => 'https://github.com/ChronicStim/RNCryptor-objc.git', :branch => 'CPTDevelopment', :tag => "CPT-#{s.version.to_s}" }
   s.description = 'Provides an easy-to-use, Objective-C interface to the AES functionality of CommonCrypto. Simplifies correct handling of password stretching (PBKDF2), salting, and IV.'
-  s.homepage = 'https://github.com/rnapier/RNCryptor'
-  s.source_files = 'RNCryptor/*.{h,m}'
-  s.public_header_files = 'RNCryptor/*.h'
+  s.homepage = 'https://github.com/chronicstim/RNCryptor-objc'
+
+  s.ios.source_files = 'RNCryptor/*', 'RNCryptor iOS/*'
+  s.osx.source_files = 'RNCryptor/*', 'RNCryptor OS X/*'
+  s.tvos.source_files = 'RNCryptor/*', 'RNCryptor tvOS/*'
+  s.watchos.source_files = 'RNCryptor/*', 'RNCryptor watchOS/*'  
+  
+  s.ios.public_header_files = 'RNCryptor/*.h', 'RNCryptor iOS/*.h'
+  s.osx.public_header_files = 'RNCryptor/*.h'
+  s.tvos.public_header_files = 'RNCryptor/*.h', 'RNCryptor tvOS/*.h'
+  s.watchos.public_header_files = 'RNCryptor/*.h', 'RNCryptor watchOS/*.h'
+  
   s.private_header_files = "RNCryptor/RNCryptorEngine.h", "RNCryptor/RNCryptor+Private.h"
-  s.ios.source_files = 'RNCryptor iOS/*.{h,m}'
-  s.ios.public_header_files = 'RNCryptor iOS/*.h'
+
   s.requires_arc = true
   s.frameworks = 'Security'
+
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
+
 end
 
