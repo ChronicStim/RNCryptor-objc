@@ -22,9 +22,9 @@ NSData *GetDataForHex(NSString *hex)
   char byte_chars[3] = {'\0','\0','\0'};
   int i;
   for (i=0; i < [hexNoSpaces length] / 2; i++) {
-    byte_chars[0] = [hexNoSpaces characterAtIndex:i*2];
-    byte_chars[1] = [hexNoSpaces characterAtIndex:i*2+1];
-    whole_byte = strtol(byte_chars, NULL, 16);
+    byte_chars[0] = (char)[hexNoSpaces characterAtIndex:i*2];
+    byte_chars[1] = (char)[hexNoSpaces characterAtIndex:i*2+1];
+    whole_byte = (unsigned char)strtol(byte_chars, NULL, 16);
     [data appendBytes:&whole_byte length:1];
   }
   return data;
@@ -63,7 +63,7 @@ int main(int argc, char * const argv[])
       { NULL,         0,                      NULL,           0 }
     };
 
-    while ((ch = getopt_long(argc, argv, "dp:P", longopts, NULL)) != -1)
+    while ((ch = (char)getopt_long(argc, argv, "dp:P", longopts, NULL)) != -1)
       switch (ch) {
         case 'd':
           decrypt_flag = 1;
