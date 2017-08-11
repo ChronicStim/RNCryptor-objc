@@ -20,10 +20,10 @@ LIC
   s.description = 'Provides an easy-to-use, Objective-C interface to the AES functionality of CommonCrypto. Simplifies correct handling of password stretching (PBKDF2), salting, and IV.'
   s.homepage = 'https://github.com/chronicstim/RNCryptor-objc'
 
-  s.ios.source_files = 'RNCryptor/*', 'RNCryptor iOS/*'
-  s.osx.source_files = 'RNCryptor/*', 'RNCryptor OS X/*'
-  s.tvos.source_files = 'RNCryptor/*', 'RNCryptor tvOS/*'
-  s.watchos.source_files = 'RNCryptor/*', 'RNCryptor watchOS/*'  
+  s.ios.source_files = 'RNCryptor/*.{h,m}', 'RNCryptor iOS/*.{h,m}'
+  s.osx.source_files = 'RNCryptor/*.{h,m}', 'RNCryptor OS X/*.{h,m}'
+  s.tvos.source_files = 'RNCryptor/*.{h,m}', 'RNCryptor tvOS/*.{h,m}'
+  s.watchos.source_files = 'RNCryptor/*.{h,m}', 'RNCryptor watchOS/*.{h,m}'  
   
   s.ios.public_header_files = 'RNCryptor/*.h', 'RNCryptor iOS/*.h'
   s.osx.public_header_files = 'RNCryptor/*.h'
@@ -32,8 +32,6 @@ LIC
   
   s.private_header_files = "RNCryptor/RNCryptorEngine.h", "RNCryptor/RNCryptor+Private.h"
 
-  s.ios.module_map = 'RNCryptor iOS/*.modulemap'
-  
   s.requires_arc = true
   s.frameworks = 'Security'
 
