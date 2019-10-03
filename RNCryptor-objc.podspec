@@ -17,9 +17,20 @@ LIC
   }
   s.source = { :git => 'https://github.com/RNCryptor/RNCryptor-objc.git', :tag => "RNCryptor-#{s.version.to_s}" }
   s.description = 'Provides an easy-to-use, Objective-C interface to the AES functionality of CommonCrypto. Simplifies correct handling of password stretching (PBKDF2), salting, and IV.'
-  s.homepage = 'https://github.com/rnapier/RNCryptor'
-  s.source_files = 'RNCryptor/*.{h,m}'
-  s.public_header_files = 'RNCryptor/*.h'
+  
+  s.homepage = 'https://github.com/chronicstim/RNCryptor-objc'
+  s.ios.source_files = "RNCryptor/*.{h,m}", "RNCryptor iOS/*.{h,m}"
+  s.ios.public_header_files = "RNCryptor/*.h", "RNCryptor iOS/*.h"
+  
+  s.osx.source_files = "RNCryptor/*.{h,m}", "RNCryptor OS X/*.{h,m}"
+  s.osx.public_header_files = "RNCryptor/*.h"
+  
+  s.tvos.source_files = "RNCryptor/*.{h,m}", "RNCryptor tvOS/*.{h,m}"
+  s.tvos.public_header_files = "RNCryptor/*.h", "RNCryptor tvOS/*.h"
+  
+  s.watchos.source_files = "RNCryptor/*.{h,m}", "RNCryptor watchOS/*.{h,m}"
+  s.watchos.public_header_files = "RNCryptor/*.h", "RNCryptor watchOS/*.h"
+  
   s.private_header_files = "RNCryptor/RNCryptorEngine.h", "RNCryptor/RNCryptor+Private.h"
   s.requires_arc = true
   s.frameworks = 'Security'
