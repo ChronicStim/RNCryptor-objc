@@ -27,7 +27,7 @@
 #import "RNEncryptor.h"
 #import "RNCryptor+Private.h"
 #import "RNCryptorEngine.h"
-#import <CommonCrypto/CommonCryptor.h>
+
 #import <CommonCrypto/CommonHMAC.h>
 
 @interface RNEncryptor ()
@@ -123,7 +123,7 @@
     }
 
     NSError *error = nil;
-    self.engine = [[RNCryptorEngine alloc] initWithOperation:(uint32_t)kCCEncrypt
+    self.engine = [[RNCryptorEngine alloc] initWithOperation:kCCEncrypt
                                                     settings:theSettings
                                                          key:anEncryptionKey
                                                           IV:self.IV

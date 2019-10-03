@@ -86,10 +86,8 @@ typedef void (^RNCryptorHandler)(RNCryptor *cryptor, NSData *data);
 @property (nonatomic, readonly, strong) NSError *error;
 @property (nonatomic, readonly, getter=isFinished) BOOL finished;
 @property (nonatomic, readonly, copy) RNCryptorHandler handler;
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wobjc-property-no-attribute"
 @property (nonatomic, readwrite) dispatch_queue_t responseQueue;
-#pragma clang diagnostic pop
+
 - (void)addData:(NSData *)data;
 - (void)finish;
 

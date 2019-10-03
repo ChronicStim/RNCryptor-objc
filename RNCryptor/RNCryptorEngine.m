@@ -26,7 +26,6 @@
 
 
 #import "RNCryptorEngine.h"
-#import <CommonCrypto/CommonCryptor.h>
 
 @interface RNCryptorEngine ()
 @property (nonatomic, readonly) CCCryptorRef cryptor;
@@ -38,12 +37,12 @@
 @synthesize buffer = __buffer;
 
 
-- (RNCryptorEngine *)initWithOperation:(uint32_t)operation settings:(RNCryptorSettings)settings key:(NSData *)key IV:(NSData *)IV error:(NSError **)error
+- (RNCryptorEngine *)initWithOperation:(CCOperation)operation settings:(RNCryptorSettings)settings key:(NSData *)key IV:(NSData *)IV error:(NSError **)error
 {
   self = [super init];
   if (self) {
     CCCryptorStatus
-        cryptorStatus = CCCryptorCreate((CCOperation)operation,
+        cryptorStatus = CCCryptorCreate(operation,
                                         settings.algorithm,
                                         settings.options,
                                         key.bytes,
